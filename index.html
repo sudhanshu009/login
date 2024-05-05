@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+
+    <Style>
+        body{
+            background-color: rgb(164, 172, 172);
+            margin: 0%;
+            padding: 0%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            
+            width: 300px;
+        }
+        h2{
+            text-align: center;
+            margin-top: 20px;
+        }
+        .email-1{
+            font-size: 20px ;
+        }
+        .password-1{
+            font-size: 20px ;
+        }
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        .create-account{
+            display: flex;
+            justify-content: center;
+        }
+        .dont{
+            display: flex;
+            justify-content: center;
+        }
+    </Style>
+</head>
+<body>
+    <div class="container">
+            <h2>Login</h2>
+        <div class="container-2">
+            <form action="login.php" method="POST"></form>
+            <div class="email-1">Email</div>
+                <input type="text" placeholder="Enter your Email" required>
+            <div class="password-1">Password</div>
+                <input type="text" placeholder="Enter your Password" required>
+            <div> <input type="submit" value="Login"></div>
+            <div class="dont">
+                <p>If you don't have an account.</p>
+            </div> 
+            <div class="create-account">
+                <a href="create_account.html">Create Account</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
